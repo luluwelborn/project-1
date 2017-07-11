@@ -1,5 +1,16 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: The Game
 
+### My Game Outline
+
+Avoid obstacles by moving up and down. If you can avoid all the obstacles in your way by the time you reach your destination, you win!
+
+My plan for this game is to have a background image that animates/moves left until a certain point, and repeats. This will give my main object (a ghost in the wireframe) the appearance that it is moving to the right. As obstacle objects animate into the game area, the user will press up or down to avoid the obstacles, otherwise the user will lose. I plan to have a landing page, game page, pause page, and win page. I will brainstorm a little more to develop the story and the characters, but I want to get the js working first.
+
+See the wireframe sketch, wireframe.jpg, in my main project-1 folder.
+
+
+---
+
 ### Overview
 
 Let's start out with something fun - **a game!**
