@@ -1,0 +1,18 @@
+body	{
+	margin: 100px;
+}
+
+.containerGame	{
+	margin: auto;
+	height: 400px;
+	width: 700px;
+	outline: #bbb solid thin;
+    padding: 10px;
+}
+
+.character	{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-color: #666;
+}
