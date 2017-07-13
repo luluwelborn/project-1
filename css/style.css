@@ -1,11 +1,11 @@
 body	{
-	margin: 100px;
+	margin: 30px;
 }
 
 .containerGame	{
 	margin: auto;
-	height: 400px;
-	width: 700px;
+	height: 475px;
+	width: 400px;
 	outline: #bbb solid thin;
     padding: 10px;
 }
