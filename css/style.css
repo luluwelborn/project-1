@@ -1,6 +1,6 @@
 body	{
 	/*background: radial-gradient(#0B052F, #0C459C);*/
-	background-color: #333;
+	background-color: #111;
 }
 
 h1	{
@@ -22,16 +22,18 @@ h1	{
 	position: relative;
 	height: 400px;
 	width: 300px;
-	outline: #333 solid thick;
+	outline: #111 solid thick;
 	background-color: #666;
 }
 
 .player	{
+	top: 100px;
+	left: 120px;
 	position: absolute;
 	height: 50px;
 	width: 50px;
 	background-color: #fff;
-	margin-top: 50px;
+	margin: auto;
 }
 
 @keyframes move	{
@@ -40,11 +42,12 @@ h1	{
 }
 
 .largeObstacleLeft	{
-    bottom: 400;
+    top: 400px;
+    bottom: 0;
     left: 0;
 	height: 20px;
 	width: 140px;
-	background-color: #333;
+	background-color: #111;
 	position: relative;
     /*animation: move 10s infinite;*/
 }
@@ -62,6 +65,6 @@ button	{
 	float: right;
 	height: 25px;
 	width: 300px;
-	background-color: #333;
+	background-color: #111;
 }
 */
