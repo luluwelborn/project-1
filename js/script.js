@@ -1,22 +1,49 @@
-var character = $("character");
-var obstacle = $("obstacle");
 
+var obstacle = $(".obstacle");
+var score = $(".score");
+var boundingBox = $(".boundingBox")
+
+// Start Game function
+
+// Bounding Box 
+
+// Set score box
+
+// Move player left and right
 $(document).ready(function() {
-		console.log("ready funstion exists");
 	$(document).keydown(function(event){
-		console.log("keydown exists");
     if (event.keyCode === 39) {
+    	//stops player at right side
+    	if(parseInt($(".player").css("left")) >= 240){
+            window.alert("Game Over");
+        }
     	// moves right
-       $(".character").finish().animate({
+       $(".player").finish().animate({
             left: "+=20"
         });
     }
     if (event.keyCode === 37) {
-    	// moves right
-       $(".character").finish().animate({
+    	//stops player at right side
+    	if(parseInt($(".player").css("left")) <= 0){
+            window.alert("Game Over");
+        }
+    	// moves left
+       $(".player").finish().animate({
             left: "-=20"
         });
     } 
   	
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+

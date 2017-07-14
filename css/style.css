@@ -1,18 +1,58 @@
 body	{
-	margin: 30px;
+	background-color: #ddd;
 }
 
-.containerGame	{
+h1	{
+	text-align: center;
+	font-family: 'Shrikhand', cursive;
+	font-size: 36px;
+	color: #666;
+}
+
+.score	{
 	margin: auto;
-	height: 475px;
-	width: 400px;
-	outline: #bbb solid thin;
-    padding: 10px;
+	width: 150px;
+	height: 40px;
+	background-color: #fff;
 }
 
-.character	{
+.boundingBox	{
+	margin: auto;
+	position: relative;
+	height: 400px;
+	width: 300px;
+	outline: #333 solid thick;
+	background-color: #bbb;
+}
+
+.player	{
 	position: absolute;
 	height: 50px;
 	width: 50px;
 	background-color: #666;
+	margin-top: 100px;
 }
+
+@keyframes move	{
+    from {top: 380px;}
+    to {top: 0px;}
+}
+
+.largeObstacleLeft	{
+    bottom: 0;
+    left: 0;
+	height: 20px;
+	width: 140px;
+	background-color: #333;
+	position: relative;
+    animation: move 10s infinite;
+}
+
+/*
+.largeObstacleRight	{
+	float: right;
+	height: 25px;
+	width: 300px;
+	background-color: #333;
+}
+*/
