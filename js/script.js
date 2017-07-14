@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 function start()	{
 
-	$(".largeObstacleLeft").css("animation" , "move 10s infinite");
+	$(".largeObstacleLeft").css("animation", "move 10s infinite");
 
 	$(document).keydown(function(event){
     if (event.keyCode === 39) {
@@ -43,6 +43,8 @@ function start()	{
   	
 	});
 }
+
+
 
 
 
