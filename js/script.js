@@ -11,6 +11,14 @@ var boundingBox = $(".boundingBox")
 
 // Move player left and right
 $(document).ready(function() {
+	document.getElementById("button").addEventListener("click", start);
+});
+
+
+function start()	{
+
+	$(".largeObstacleLeft").css("animation" , "move 10s infinite");
+
 	$(document).keydown(function(event){
     if (event.keyCode === 39) {
     	//stops player at right side
@@ -34,7 +42,7 @@ $(document).ready(function() {
     } 
   	
 	});
-});
+}
 
 
 
