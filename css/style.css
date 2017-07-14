@@ -1,12 +1,13 @@
 body	{
-	background-color: #ddd;
+	/*background: radial-gradient(#0B052F, #0C459C);*/
+	background-color: #333;
 }
 
 h1	{
 	text-align: center;
 	font-family: 'Shrikhand', cursive;
 	font-size: 36px;
-	color: #666;
+	color: #eee;
 }
 
 .score	{
@@ -22,15 +23,15 @@ h1	{
 	height: 400px;
 	width: 300px;
 	outline: #333 solid thick;
-	background-color: #bbb;
+	background-color: #666;
 }
 
 .player	{
 	position: absolute;
 	height: 50px;
 	width: 50px;
-	background-color: #666;
-	margin-top: 100px;
+	background-color: #fff;
+	margin-top: 50px;
 }
 
 @keyframes move	{
@@ -39,7 +40,7 @@ h1	{
 }
 
 .largeObstacleLeft	{
-    bottom: 0;
+    bottom: 400;
     left: 0;
 	height: 20px;
 	width: 140px;
