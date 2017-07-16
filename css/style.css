@@ -80,6 +80,7 @@ img	{
 	background-color: #111;
 	position: relative;
 	overflow:hidden;
+	animation-timing-function: linear;
 	/*display: inline-block;*/  
 }
 
@@ -93,6 +94,7 @@ img	{
 	background-color: #111;
 	position: relative;
 	overflow:hidden;
+	animation-timing-function: linear;
 	/*display: inline-block;  Works to place obstacles next to eachother, but stops animation */
 }
 

@@ -15,11 +15,11 @@ $(document).ready(function() {
 
 function start()	{
     // animations
-	$(".largeObstacleLeft").css("animation", "move 6s infinite");
-  $(".largeObstacleLeft").css("animation-timing-function:linear");
-  $(".largeObstacleRight").css("animation", "move 6s infinite");
+	$(".largeObstacleLeft").css("animation", "move 6s infinite", "animation-timing-function:linear");
+  // $(".largeObstacleLeft").css("animation-timing-function:linear");
+  $(".largeObstacleRight").css("animation", "move 6s infinite", "animation-timing-function:linear");
   $(".largeObstacleRight").css("animation-delay", "3s");
-  $(".largeObstacleLeft").css("animation-timing-function:linear");
+  // $(".largeObstacleLeft").css("animation-timing-function:linear");
 
   // add score timer
 
