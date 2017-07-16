@@ -1,5 +1,4 @@
 body	{
-	/*background: radial-gradient(#0B052F, #0C459C);*/
 	background-color: #111;
 }
 
@@ -8,8 +7,8 @@ h1	{
 	font-family: 'Poiret One', cursive, sans-serif;
 	font-size: 46px;
 	color: #eee;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 0;
 }
 
 button	{
@@ -27,16 +26,11 @@ button	{
 }
 
 button:hover	{
-  background-color: #444;
-  text-decoration: none;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
+  background-color: #333;
 }
 
+/*Link for button*/
 a  {
-  height: 50px;
   width: 150px;
   margin: auto;
   margin-top: 10px;
@@ -47,18 +41,18 @@ a  {
   background-color: #111;
   letter-spacing: 2px;
   font-size: 14px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 a:hover	{
-  background-color: #444;
-  text-decoration: none;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 14px;
-  letter-spacing: 2px;
+  background-color: #333;
 }
 
 img	{
+	/*Center Image*/
 	display: block;
 	margin: auto;
 }
@@ -72,6 +66,7 @@ img	{
 	margin-bottom: 10px;
 }
 
+/*Main game area*/
 .boundingBox	{
 	margin: auto;
 	position: relative;
@@ -81,6 +76,7 @@ img	{
 	background-color: #666;
 }
 
+/*main charater to move right left*/
 .player	{
 	top: 100px;
 	left: 120px;
@@ -91,20 +87,22 @@ img	{
 	margin: auto;
 }
 
+/*Animation*/
 @keyframes move	{
     from {top: 380px;}
     to {top: 0px;}
 }
 
 .largeObstacleLeft	{
-    top: 4000px;
+    /*postion inside of bounding box from top left*/
+    top: 400px;
     bottom: 0;
     left: 0;
 	height: 20px;
 	width: 140px;
 	background-color: #111;
 	position: relative;
-	overflow:hidden;
+	overflow: hidden;
 	display: inline-block;  
 }
 
@@ -118,7 +116,7 @@ img	{
 	background-color: #111;
 	position: relative;
 	overflow:hidden;
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 
