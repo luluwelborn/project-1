@@ -11,10 +11,10 @@ $(document).ready(function() {
 
 function start()	{
   // Animations
-	$(".largeObstacleLeft").css("animation", "move 6s infinite", "animation-timing-function:linear");
+	$(".largeObstacleLeft").css("animation", "move 6s infinite", "transition-timing-function:linear");
   // $(".largeObstacleLeft").css("animation-timing-function:linear");
-  $(".largeObstacleRight").css("animation", "move 6s infinite", "animation-timing-function:linear");
-  $(".largeObstacleRight").css("animation-delay", "3s");
+  $(".largeObstacleRight").css("animation", "move 6s infinite", "transition-timing-function:linear");
+  $(".largeObstacleRight").css("animation-delay", "2s");
   // $(".largeObstacleLeft").css("animation-timing-function:linear");
 
   // Arrow key movements and Boundary alerts

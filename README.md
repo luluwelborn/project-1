@@ -14,6 +14,18 @@ As obstacle objects animate into the game area, the user will press left or righ
 
 See the wireframe sketch, wireframe.jpg, in my main project-1/assets folder.
 
+### Technologies used
+I used jQuery and css animations to create my game. JS/jQuery was used to move the player left and right, and css animations were used to move the obtacles.
+
+### Unsolved Problems
+Tech - I was unable to create a "win" state for my game, and was unsussesful in adding a successful score timer. I had also hoped to have time to make "lose" and "win" screens, which I did not.
+
+I also had trouble controling the speed of the animation, I have what I believe to be the correct code to keep the animation the same speed but it's not working for me. I also can't find how to hide my div objects until the reach 400px below the gameboard.
+
+Visuals - I put visuals aside to work on functionality, so the game is not as visually pleasing as I had hoped, that inclues having basic shapes as characters rather than images.
+
+
+---
 
 ### 7/12 First Outline
 Avoid obstacles by moving up and down. If you can avoid all the obstacles in your way by the time you reach your destination, you win!
