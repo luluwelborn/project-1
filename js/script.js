@@ -1,7 +1,6 @@
 
 var obstacleL = $(".largeObstacleLeft");
 var obstacleR = $(".largeObstacleRight");
-var score = $(".score");
 var boundingBox = $(".boundingBox")
 
 
@@ -17,12 +16,15 @@ $(document).ready(function() {
 function start()	{
     // animations
 	$(".largeObstacleLeft").css("animation", "move 6s infinite");
-    $(".largeObstacleLeft").css("animation-timing-function:linear");
-    $(".largeObstacleRight").css("animation", "move 6s infinite");
-    $(".largeObstacleRight").css("animation-delay", "3s");
-    $(".largeObstacleLeft").css("animation-timing-function:linear");
+  $(".largeObstacleLeft").css("animation-timing-function:linear");
+  $(".largeObstacleRight").css("animation", "move 6s infinite");
+  $(".largeObstacleRight").css("animation-delay", "3s");
+  $(".largeObstacleLeft").css("animation-timing-function:linear");
 
-    // arrow key movements and boundary alerts
+  // add score timer
+
+
+  // arrow key movements and boundary alerts
 	$(document).keydown(function(event){
     if (event.keyCode === 39) {
     	//stops player at right side

@@ -38,11 +38,13 @@ img	{
 	float: center;
 }
 
-.score	{
+.timer	{
 	margin: auto;
-	width: 150px;
-	height: 40px;
-	background-color: #fff;
+	width: 298px;
+	height: 30px;
+	color: #eee;
+	outline: #eee solid thin;
+	margin-bottom: 20px;
 }
 
 .boundingBox	{
