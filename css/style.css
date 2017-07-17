@@ -7,50 +7,50 @@
 }
 
 body	{
-	background-color: #111;
+  background-color: #111;
 }
 
 h1	{
-	text-align: center;
-	font-family: 'Poiret One', cursive, sans-serif;
-	font-size: 46px;
-	color: #eee;
-	margin-top: 30px;
-	margin-bottom: 0;
+  text-align: center;
+  font-family: 'Poiret One', cursive, sans-serif;
+  font-size: 46px;
+  color: #eee;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 h2	{
-	text-align: center;
-	font-family: 'Poiret One', cursive, sans-serif;
-	font-size: 46px;
-	color: #eee;
-	margin-top: 30px;
-	margin-bottom: 0;
-	padding-top: 30px;
+  text-align: center;
+  font-family: 'Poiret One', cursive, sans-serif;
+  font-size: 46px;
+  color: #eee;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-top: 30px;
 }
 
 p  {
-	color: #eee;
-	font-size: 15px;
-	font-family: sans-serif;
-	max-width: 400px;
-	text-align: center;
-	margin: auto;
-	padding: 30px;
+  color: #eee;
+  font-size: 15px;
+  font-family: sans-serif;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
 }
 
 button	{
-	height: 50px;
-	width: 150px;
-	margin: auto;
-	margin-top: 10px;
-	display: block;
-	color: #eee;
-	border: 1px solid #eee;
-	background-color: #111;
-	letter-spacing: 2px;
-	font-size: 14px;
-	letter-spacing: 2px;
+  height: 50px;
+  width: 150px;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  color: #eee;
+  border: 1px solid #eee;
+  background-color: #111;
+  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 button:hover	{
@@ -80,58 +80,58 @@ a:hover	{
 }
 
 img	{
-	/*Center Image*/
-	display: block;
-	margin: auto;
+  /*Center Image*/
+  display: block;
+  margin: auto;
 }
 
 .timer	{
-	margin: auto;
-	width: 298px;
-	height: 20px;
-	color: #bbb;
-	background-color: #333;
-	margin-bottom: 10px;
-	font-family: sans-serif;
-	text-align: center;
-	font-size: 12px;
-	padding-top: 8px;
-	letter-spacing: 2px;
+  margin: auto;
+  width: 298px;
+  height: 20px;
+  color: #bbb;
+  background-color: #333;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 8px;
+  letter-spacing: 2px;
 }
 
 /*Main game area*/
 .boundingBox	{
-	margin: auto;
-	position: relative;
-	height: 400px;
-	width: 300px;
-	outline: #111 solid thick;
-	background-color: #666;
+  margin: auto;
+  position: relative;
+  height: 400px;
+  width: 300px;
+  outline: #111 solid thick;
+  background-color: #666;
+  /*background-image: url("../images/cloudss.jpg");*/
 }
 
 /*main charater to move right left*/
 .player	{
-	top: 120px;
-	left: 120px;
-	position: absolute;
-	height: 50px;
-	width: 50px;
-	background-color: #fff;
-	margin: auto;
+  top: 120px;
+  left: 120px;
+  position: absolute;
+  height: 50px;
+  background-color: #fff;
+  margin: auto;
 }
 
 /*Animation*/
 @keyframes move	{
-    from {top: 380px;}
-    to {top: 0px;}
+  from {top: 380px;}
+  to {top: 0px;}
 }
 
 .largeObstacleLeft	{
     /*postion inside of bounding box from top left*/
-    top: 380px;
-    bottom: 0;
-    left: 0;
-	height: 20px;
+  top: 380px;
+  bottom: 0;
+  left: 0;
+  height: 20px;
 	width: 150px;
 	background-color: #111;
 	position: relative;
@@ -142,8 +142,8 @@ img	{
 
 .largeObstacleRight	{
 	top: 356px;
-    bottom: 0;
-    left: 160px;
+	bottom: 0;
+	left: 160px;
 	height: 20px;
 	width: 150px;
 	background-color: #111;
