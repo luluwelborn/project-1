@@ -34,8 +34,10 @@ $(document).ready(function() {
     if (event.keyCode === 39) {
     	//stops player at right side
     	if(parseInt($(".player").css("left")) >= 240){
-            window.alert("Game Over");
             // stop animation here!!!
+            window.alert("Game Over. Hit OK to reset game.");
+            // Reload the current page
+            window.location.reload(true);
       }
     	 // moves right
       $(".player").finish().animate({
@@ -45,7 +47,10 @@ $(document).ready(function() {
     if (event.keyCode === 37) {
     	//stops player at right side
     	if(parseInt($(".player").css("left")) <= 0){
-            window.alert("Game Over");
+            // stop animation here!!!
+            window.alert("Game Over. Hit OK to reset game.");
+            // Reload the current page
+            window.location.reload(true);
         }
     	// moves left
        $(".player").finish().animate({
@@ -71,7 +76,9 @@ function collision($player, $largeObstacleLeft) {
       (x1 + $player.outerWidth(true)) < x2  ||
       x1 > (x2 + $largeObstacleLeft.outerWidth(true)))
   return false;
-    window.alert("A cloud woke you up! Game Over");
+    window.alert("A cloud woke you up! Game Over. Hit OK to reset game.");
+    // Reload the current page, without using the cache
+    window.location.reload(true);
     console.log("collision!");
   return true;
   }
@@ -94,7 +101,9 @@ function collision($player, $largeObstacleRight) {
       (x1 + $player.outerWidth(true)) < x2  ||
       x1 > (x2 + $largeObstacleRight.outerWidth(true)))
   return false;
-    window.alert("A cloud woke you up! Game Over");
+    window.alert("A cloud woke you up! Game Over. Hit OK to reset game.");
+    // Reload the current page, without using the cache
+    window.location.reload(true);
     console.log("collision!");
   return true;
   }
