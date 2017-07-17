@@ -9,7 +9,7 @@ https://luluwelborn.github.io/project-1/
 https://trello.com/b/7cBjJq1W/project1
 
 ### Wireframe (need to recreate):
-https://github.com/luluwelborn/project-1/blob/master/assets/wireframe.jpg
+https://github.com/luluwelborn/project-1/blob/gh-pages/images/wireframe.jpg
 
 ### My Game Outline
 Keep Falling Asleep. Avoid obstacles by moving left and right, otherwise you will wake up and have to start over. The more obstacles you can avoid, the higher your score!
