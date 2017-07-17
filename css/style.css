@@ -19,8 +19,24 @@ h1	{
 	margin-bottom: 0;
 }
 
+h2	{
+	text-align: center;
+	font-family: 'Poiret One', cursive, sans-serif;
+	font-size: 46px;
+	color: #eee;
+	margin-top: 30px;
+	margin-bottom: 0;
+	padding-top: 30px;
+}
+
 p  {
 	color: #eee;
+	font-size: 15px;
+	font-family: sans-serif;
+	max-width: 400px;
+	text-align: center;
+	margin: auto;
+	padding: 30px;
 }
 
 button	{
