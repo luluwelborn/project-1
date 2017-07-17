@@ -9,15 +9,15 @@ $(document).ready(function() {
 	document.getElementById("button").addEventListener("click", start);
 });
 
-function start()	{
-  // Animations
-	$(".largeObstacleLeft").css("animation", "move 6s infinite");
-  // $(".largeObstacleLeft").css("animation-timing-function:linear");
-  $(".largeObstacleRight").css("animation", "move 6s infinite");
-  $(".largeObstacleRight").css("animation-delay", "2s");
-  // $(".largeObstacleLeft").css("animation-timing-function:linear");
+  function start()	{
+    // Animations
+	 $(".largeObstacleLeft").css("animation", "move 6s infinite");
+    // $(".largeObstacleLeft").css("animation-timing-function:linear");
+    $(".largeObstacleRight").css("animation", "move 6s infinite");
+    $(".largeObstacleRight").css("animation-delay", "2s");
+    // $(".largeObstacleLeft").css("animation-timing-function:linear");
 
-  // timer
+  // Timer
   var timerVar = setInterval(countTimer, 1000);
   var totalSeconds = 0;
   function countTimer() {
@@ -60,11 +60,12 @@ function start()	{
 /* detect collision */ 
 function collision($player, $largeObstacleLeft) {
   // console.log("reading collision");
-  // coordinates of the div
+  // offset returns coordinates for the divs, relative to the div boundary
   var x1 = $player.offset().left;
   var y1 = $player.offset().top;
   var x2 = $largeObstacleLeft.offset().left;
   var y2 = $largeObstacleLeft.offset().top;
+  // Get the current outer height from size, padding, margin, border
   if ((y1 + $player.outerHeight(true)) < y2 ||
       y1 > (y2 + $largeObstacleLeft.outerHeight(true)) ||
       (x1 + $player.outerWidth(true)) < x2  ||
