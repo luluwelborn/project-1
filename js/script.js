@@ -17,6 +17,18 @@ function start()	{
   $(".largeObstacleRight").css("animation-delay", "2s");
   // $(".largeObstacleLeft").css("animation-timing-function:linear");
 
+  // timer
+  var timerVar = setInterval(countTimer, 1000);
+  var totalSeconds = 0;
+  function countTimer() {
+    ++totalSeconds;
+    var hour = Math.floor(totalSeconds /3600);
+    var minute = Math.floor((totalSeconds - hour*3600)/60);
+    var seconds = totalSeconds - (hour*3600 + minute*60);
+  
+  document.getElementById("timer").innerHTML = "score: " + seconds;
+  }
+
   // Arrow key movements and Boundary alerts
 	$(document).keydown(function(event){
     if (event.keyCode === 39) {
@@ -44,17 +56,6 @@ function start()	{
 	});
 }
 
-// timer
-var timerVar = setInterval(countTimer, 1000);
-var totalSeconds = 0;
-function countTimer() {
-  ++totalSeconds;
-  var hour = Math.floor(totalSeconds /3600);
-  var minute = Math.floor((totalSeconds - hour*3600)/60);
-  var seconds = totalSeconds - (hour*3600 + minute*60);
-  
-  document.getElementById("timer").innerHTML = "score: " + seconds;
-}
 
 /* detect collision */ 
 function collision($player, $largeObstacleLeft) {
