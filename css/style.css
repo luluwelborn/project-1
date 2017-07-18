@@ -139,7 +139,7 @@ img	{
 	/*background-color: #111;*/
 	position: relative;
 	overflow: hidden;
-	display: inline-block;
+	display: none;
 }
 
 
@@ -151,7 +151,8 @@ img	{
 	width: 150px;
 	/*background-color: #111;*/
 	position: relative;
-	overflow:hidden;
+	overflow: hidden;
+	display: none;
 	/*display: inline-block;*/
 }
 

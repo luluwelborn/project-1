@@ -9,26 +9,34 @@ $(document).ready(function() {
 	document.getElementById("button").addEventListener("click", start);
 });
 
-  function start()	{
-    // Animations
-    $(".largeObstacleLeft").css("animation", "move 6s infinite linear");
-    $(".largeObstacleRight").css("animation", "move 6s infinite linear");
-    $(".largeObstacleRight").css("animation-delay", "3s");
-
-  // Timer
-  var timerVar = setInterval(countTimer, 1000);
-  var totalSeconds = 0;
-  function countTimer() {
-    ++totalSeconds;
-    var hour = Math.floor(totalSeconds /3600);
-    var minute = Math.floor((totalSeconds - hour*3600)/60);
-    var seconds = totalSeconds - (hour*3600 + minute*60);
   
-  document.getElementById("timer").innerHTML = "score: " + seconds;
-  }
 
-  // Arrow key movements and Boundary alerts
-	$(document).keydown(function(event){
+  function start()	{
+    // Hide object before animation
+    $(".largeObstacleLeft").hide();
+            console.log("hidden!");
+    $(".largeObstacleRight").hide();
+            console.log("hidden!");
+    // Animations
+    $(".largeObstacleLeft").show(1000).css("animation", "move 6s infinite linear");
+    $(".largeObstacleRight").show(1000).css("animation", "move 6s infinite linear");
+    $(".largeObstacleRight").css("animation-delay", "3s");
+    
+
+    // Timer
+    var timerVar = setInterval(countTimer, 1000);
+    var totalSeconds = 0;
+    function countTimer() {
+      ++totalSeconds;
+      var hour = Math.floor(totalSeconds /3600);
+      var minute = Math.floor((totalSeconds - hour*3600)/60);
+      var seconds = totalSeconds - (hour*3600 + minute*60);
+  
+      document.getElementById("timer").innerHTML = "score: " + seconds;
+    }
+
+    // Arrow key movements and Boundary alerts
+	 $(document).keydown(function(event){
     if (event.keyCode === 39) {
     	//stops player at right side
     	if(parseInt($(".player").css("left")) >= 240){
