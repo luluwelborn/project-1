@@ -11,11 +11,9 @@ $(document).ready(function() {
 
   function start()	{
     // Animations
-	 $(".largeObstacleLeft").css("animation", "move 6s infinite");
-    // $(".largeObstacleLeft").css("animation-timing-function:linear");
-    $(".largeObstacleRight").css("animation", "move 6s infinite");
-    $(".largeObstacleRight").css("animation-delay", "2s");
-    // $(".largeObstacleLeft").css("animation-timing-function:linear");
+    $(".largeObstacleLeft").css("animation", "move 6s infinite linear");
+    $(".largeObstacleRight").css("animation", "move 6s infinite linear");
+    $(".largeObstacleRight").css("animation-delay", "3s");
 
   // Timer
   var timerVar = setInterval(countTimer, 1000);
